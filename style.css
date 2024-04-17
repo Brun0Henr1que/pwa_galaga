@@ -156,3 +156,73 @@ body {
 .space-button:active {
     background-color: #757575;
 }
+
+/* CSS para o modal */
+.modal {
+    display: block;
+    position: fixed;
+    z-index: 1001; /* Z-index maior do que o overlay */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 400px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 12px; /* Bordas arredondadas */
+    padding: 20px; /* Adiciona espaçamento interno */
+    text-align: center; /* Centraliza o conteúdo */
+  }
+  
+  /* Estilo para o campo de entrada de texto */
+  .modal input[type="text"] {
+    width: calc(100% - 20px); /* Ajusta a largura para levar em consideração o espaçamento */
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Estilo para o botão "Acessar" */
+  .modal button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    vertical-align: middle; /* Centraliza verticalmente */
+  }
+  
+  /* Efeito de hover para o botão */
+  .modal button:hover {
+    background-color: #45a049;
+  }
+  
+  /* CSS para o overlay */
+  .overlay {
+    position: fixed;
+    z-index: 1000; /* Z-index menor do que o modal */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo semi-transparente */
+  }
+  
+  .info{
+    position: absolute;
+    top: 0;
+    left: 15px;
+    display: flex;
+  }
+
+  #nickname, #score{
+    color: white;
+  }
+
+  #score{
+    margin-left: 5px;
+  }
+  
