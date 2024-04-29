@@ -66,24 +66,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Verifica se não há mais inimigos vivos
         if (aliveEnemies === 0) {
-            // Exibe um alerta com a pergunta
-            var resposta = confirm("Você derrotou todos os inimigos. Continuar?");
-            if (resposta) {
-                // Reiniciar o jogo
-                removeModal();
-                location.reload();
+            // Reiniciar o jogo
+            location.reload();
 
             }
 
-        }
-
-    }
-
-    function removeModal() {
-        var modal = document.querySelector('.modal');
-        if (modal) {
-            modal.remove();
-        }
     }
 
 
